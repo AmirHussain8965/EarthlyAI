@@ -193,6 +193,7 @@ const translations = {
         f_link_partners: "Partners",
         f_link_impressum: "Impressum",
         f_copy: "© 2026 EarthlyAI. All rights reserved.",
+        f_credit: "Designed & Developed by <a href='https://dextersol.com' target='_blank'>Dextersol.com</a>",
     },
 
     hi: {
@@ -391,6 +392,7 @@ const translations = {
         f_link_partners: "साझेदार",
         f_link_impressum: "इम्प्रेसम",
         f_copy: "© 2026 अर्थलीएआई। सर्वाधिकार सुरक्षित।",
+        f_credit: "डिज़ाइन और विकास किया गया <a href='https://dextersol.com' target='_blank'>Dextersol.com</a> द्वारा",
     },
 
     de: {
@@ -589,6 +591,7 @@ const translations = {
         f_link_partners: "Partner",
         f_link_impressum: "Impressum",
         f_copy: "© 2026 EarthlyAI. Alle Rechte vorbehalten.",
+        f_credit: "Entworfen & entwickelt von <a href='https://dextersol.com' target='_blank'>Dextersol.com</a>",
     }
 };
 

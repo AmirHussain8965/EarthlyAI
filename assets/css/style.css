@@ -735,6 +735,11 @@ body{
     margin-top: 40px;
     text-align: center;
     padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 .footer_last_txt p{
     font-weight: 400;
@@ -742,7 +747,9 @@ body{
     color: #2A2825;
     margin-bottom: 0;
 }
-
+.footer_last_txt p a{
+    color: #2A2825;
+}
 
 
 
