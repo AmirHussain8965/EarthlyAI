@@ -358,6 +358,7 @@ body{
 }
 .home_sec2_card_txt_div{
     padding: 15px;
+    min-height: 220px;
 }
 .home_sec2_card_txt_div h5{
     font-weight: 500;
@@ -765,7 +766,14 @@ body{
 
 
 
-
+@media (max-width: 1250px){
+    .home_sec4_card_txt{
+        min-height: 240px;
+    }
+    .home_sec1_card_body p{
+        font-size: 15px;
+    }
+}
 @media (max-width: 992px){
     .nav_right_main{
         margin-top: 20px;
