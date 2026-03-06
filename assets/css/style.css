@@ -92,15 +92,16 @@ body{
     align-items: center;
 }
 .nav_right_main select{
-    padding: 8px 8px;
+    padding: 6px 8px;
     min-width: 100px;
     box-shadow: none !important;
     background-color: #FFFFFF;
+    font-size: 14px;
 }
 .nav_btns a button{
     background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFFFFF;
     padding: 8px 20px; 
     border: none;
@@ -153,18 +154,18 @@ body{
 .hero_sec_text_main{
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     margin-top: 150px;
 }
 .hero_sec_text_main .hero_span1{
-    padding: 6px 12px 6px 30px;
+    padding: 6px 12px 6px 25px;
     border-radius: 30px;
     border: 1px solid #00FF88;
     background: #63DBB180;
     color: #63DBB1;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     position: relative;
     display: block;
     max-width: max-content;
@@ -173,16 +174,16 @@ body{
 .hero_sec_text_main .hero_span1::before{
     content: "";
     background: #63DBB1;
-    height: 8px;
-    width: 8px;
+    height: 6px;
+    width: 6px;
     border-radius: 50%;
     position: absolute;
-    top: 13px;
-    left: 13px;
+    top: 12px;
+    left: 14px;
 }
 .hero_sec_text_main h1{
-    font-weight: 600;
-    font-size: 56px;
+    font-weight: 500;
+    font-size: 42px;
     text-align: center;
     color: #F7F5F2;
     margin-top: 20px;
@@ -197,7 +198,7 @@ body{
 .hero_sec_text_main p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     color: #c8c7c7;
     margin-top: 10px;
@@ -213,10 +214,10 @@ body{
     background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
     color: #F7F5F2;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 12px;
     border: none;
-    min-width: 160px;
+    min-width: 150px;
     text-align: center;
     border-radius: 8px;
 }
@@ -226,7 +227,7 @@ body{
 .hero_image_main{
     background-image: url(../../assets/imgs/hero1.jpg);
     height: auto;
-    min-height: 800px;
+    min-height: 600px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,7 +255,7 @@ body{
 }
 .hero_counter_inner h5{
     font-weight: 600;
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
     color: #26D2A2;
     margin-bottom: 0;
@@ -262,7 +263,7 @@ body{
 .hero_counter_inner p{
     font-family: "PT Sans", sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: #c8c7c7;
     margin-bottom: 0;
@@ -273,12 +274,12 @@ body{
 .my_title_div{
     text-align: center;
     width: 100%;
-    max-width: 920px;
+    max-width: 700px;
     margin: auto;
 }
 .my_title_div h1{
-    font-weight: 600;
-    font-size: 56px;
+    font-weight: 500;
+    font-size: 42px;
     color: #F7F5F2;
 }
 .my_title_div h1 span{
@@ -291,7 +292,7 @@ body{
 .my_title_div p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     color: #c8c7c7;
 }
@@ -305,30 +306,34 @@ body{
     margin: auto;
     margin-top: 20px;
     border-radius: 12px;
+    min-height: 210px;
 }
 .home_sec1_card_body span{
     background: #FB71721A;
     border: 1px solid #FB717233;
-    height: 65px;
-    width: 65px;
+    height: 55px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
 }
+.home_sec1_card_body span img{
+    height: 25px;
+}
 .home_sec1_card_body h5{
     margin-top: 15px;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
     color: #F7F5F2;
     margin-bottom: 0;
 }
 .home_sec1_card_body p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     color: #c8c7c7;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 .home_section_two{
@@ -348,33 +353,34 @@ body{
     border-bottom: 1px solid rgba(0, 184, 136, 0.5);
     width: 100%;
     object-fit: cover;
+    height: 250px;
 }
 .home_sec2_card_txt_div{
     padding: 15px;
 }
 .home_sec2_card_txt_div h5{
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     color: #F7F5F2;
     margin-bottom: 0;
-    margin-top: 8px;
 }
 .home_sec2_card_txt_div p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 16px;
     color: #c8c7c7;
     margin-bottom: 0;
     margin-top: 12px;
 }
 .home_sec2_card_txt_div ul{
     padding-left: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .home_sec2_card_txt_div ul li{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #F7F5F2;
     margin-bottom: 0;
     margin-top: 5px;
@@ -390,8 +396,8 @@ body{
 }
 .approach_text_main_div h3{
     font-weight: 600;
-    font-size: 24px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 30px;
     letter-spacing: 0px;
     text-transform: capitalize;
     color: #F7F5F2;
@@ -399,12 +405,12 @@ body{
 .approach_text_main_div p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     letter-spacing: 0px;
     color: #c8c7c7;
     margin-bottom: 0;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .approach_text_main_div ul{
     padding-left: 0px;
@@ -413,7 +419,7 @@ body{
     position: relative;
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: #c8c7c7;
     margin-bottom: 0;
     margin-top: 17px;
@@ -459,10 +465,11 @@ body{
     border-bottom: 1px solid rgba(0, 184, 136, 0.5);
     width: 100%;
     object-fit: cover;
+    height: 340px;
 }
 .home_sec4_card_txt{
     padding: 15px 10px;
-    min-height: 270px;
+    min-height: 200px;
 }
 .home_sec4_card_txt h3{
     font-weight: 500;
@@ -474,7 +481,7 @@ body{
 .home_sec4_card_txt p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     color: #c8c7c7;
     margin-bottom: 0;
     margin-top: 12px;
@@ -517,24 +524,27 @@ body{
 .home_sec5_card_body_div span{
     background: linear-gradient(180deg, rgba(0, 184, 136, 0.1) 0%, rgba(0, 184, 164, 0.1) 100%);
     border: 1px solid #00B888;
-    height: 65px;
-    width: 65px;
-    min-width: 65px;
+    height: 55px;
+    width: 55px;
+    min-width: 55px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.home_sec5_card_body_div span img{
+    height: 25px;
+}
 .home_sec5_card_txt h2{
     color: #F7F5F2;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     margin-bottom: 0;
     margin-top: 6px;
 }
 .home_sec5_card_txt h5{
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     color: #26D2A2;
     margin-bottom: 0;
     margin-top: 8px;
@@ -542,7 +552,7 @@ body{
 .home_sec5_card_txt p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 0;
     margin-top: 8px;
     color: #c8c7c7;
@@ -569,14 +579,14 @@ body{
 }
 .home_sec5_last_card_inner h5{
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     text-align: center;
     color: #26D2A2;
 }
 .home_sec5_last_card_inner p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: 0;
     color: #F7F5F2;
@@ -774,38 +784,38 @@ body{
     .my_title_div p {
         font-family: "PT Sans", sans-serif;
         font-weight: 400;
-        font-size: 21px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 576px){
     .my_title_div h1 {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 22px;
         color: #F7F5F2;
     }
     .my_title_div p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
     }
     .hero_sec_text_main h1 {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 22px;
     }
     .hero_sec_text_main p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
     }
     .hero_image_main{
         padding: 30px 15px;
     }
     .approach_text_main_div h3 {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
     }
     .home_sec5_card_txt p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
     }
     .home_sec5_card_body_div{
         flex-wrap: wrap;
