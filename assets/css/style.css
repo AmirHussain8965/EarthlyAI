@@ -9,7 +9,7 @@
 body{
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #0A0F1A;
+    background-color: var(--color-bg);
     scroll-behavior: smooth;
     background-image: url(../../assets/imgs/bg.svg);
     height: auto;
@@ -29,13 +29,13 @@ body{
     transition: all 0.5s ease;
 }
 .header_inner{
-    background-color: #F7F5F233;
+    background-color: var(--color-surface);
     border-radius: 12px;
     padding: 6px 8px;
     transition: all 0.5s ease;
 }
 .header_section.scrolled{
-    background-color: #0A0F1A;
+    background-color: var(--color-bg-scrolled);
     top: 0;
     padding: 12px 0xp;
 }
@@ -57,7 +57,7 @@ body{
     font-size: 16px;
     text-transform: capitalize;
     position: relative;
-    color: #F7F5F2 !important;
+    color: var(--color-text-primary) !important;
 }
 .header_section .navbar ul li a.active{
     font-weight: 400;
@@ -74,13 +74,13 @@ body{
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: #F7F5F2;
+    background-color: var(--color-text-primary);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.35s ease;
 }
 .header_section .navbar .nav-link:hover{
-    color: #F7F5F2 !important;
+    color: var(--color-text-primary) !important;
 }
 .header_section .navbar .nav-link:hover::after,
 .header_section .navbar .nav-link.active::after {
@@ -96,14 +96,14 @@ body{
     padding: 6px 8px;
     min-width: 100px;
     box-shadow: none !important;
-    background-color: #FFFFFF;
+    background-color: var(--color-input-bg);
     font-size: 14px;
 }
 .nav_btns a button{
-    background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
+    background: var(--gradient-accent);
     font-weight: 500;
     font-size: 14px;
-    color: #FFFFFF;
+    color: var(--color-button-text);
     padding: 8px 20px; 
     border: none;
     border-radius: 8px;
@@ -114,8 +114,8 @@ body{
     bottom: 20px;
     width: 48px;
     height: 48px;
-    background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
-    color: #fff;
+    background: var(--gradient-accent);
+    color: var(--color-button-text);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -162,9 +162,9 @@ body{
 .hero_sec_text_main .hero_span1{
     padding: 6px 12px 6px 25px;
     border-radius: 30px;
-    border: 1px solid #00FF88;
-    background: #63DBB180;
-    color: #63DBB1;
+    border: 1px solid var(--color-accent-border-bright);
+    background: var(--color-hero-badge-bg);
+    color: var(--color-accent-badge);
     font-weight: 400;
     font-size: 12px;
     position: relative;
@@ -174,7 +174,7 @@ body{
 }
 .hero_sec_text_main .hero_span1::before{
     content: "";
-    background: #63DBB1;
+    background: var(--color-accent-badge);
     height: 6px;
     width: 6px;
     border-radius: 50%;
@@ -186,11 +186,11 @@ body{
     font-weight: 500;
     font-size: 42px;
     text-align: center;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     margin-top: 20px;
 }
 .hero_sec_text_main h1 span{
-    background: linear-gradient(90.53deg, #00B888 17.44%, #00B8A4 85.11%);
+    background: var(--gradient-accent-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -201,7 +201,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-top: 10px;
 }
 .hero_sec_btns{
@@ -212,8 +212,8 @@ body{
     margin-top: 30px;
 }
 .hero_sec_btns button{
-    background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
-    color: #F7F5F2;
+    background: var(--gradient-accent);
+    color: var(--color-text-primary);
     font-weight: 500;
     font-size: 14px;
     padding: 12px 12px;
@@ -223,7 +223,7 @@ body{
     border-radius: 8px;
 }
 .hero_sec_btns button.hero_btn2{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.2) 0%, rgba(0, 184, 164, 0.2) 100%);
+    background: var(--gradient-accent-soft);
 }
 .hero_image_main{
     background-image: url(../../assets/imgs/hero1.jpg);
@@ -242,10 +242,10 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    background: linear-gradient(180deg, rgba(247, 245, 242, 0.3) 0%, rgba(10, 15, 26, 0.3) 0.01%);
+    background: var(--color-hero-counter-bg);
     border-radius: 8px;
     padding: 20px 10px;
-    border: 1px solid rgba(247, 245, 242, 0.3);
+    border: 1px solid var(--color-border);
 }
 .hero_counter_inner{
     width: 100%;
@@ -258,7 +258,7 @@ body{
     font-weight: 600;
     font-size: 26px;
     text-align: center;
-    color: #26D2A2;
+    color: var(--color-accent-muted);
     margin-bottom: 0;
 }
 .hero_counter_inner p{
@@ -266,7 +266,7 @@ body{
     font-weight: 500;
     font-size: 16px;
     text-align: center;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
 }
 .home_section_one{
@@ -281,10 +281,10 @@ body{
 .my_title_div h1{
     font-weight: 500;
     font-size: 42px;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
 }
 .my_title_div h1 span{
-    background: linear-gradient(90.53deg, #00B888 17.44%, #00B8A4 85.11%);
+    background: var(--gradient-accent-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -295,11 +295,11 @@ body{
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
 }
 .home_sec1_card_body{
-    background: #FB71721A;
-    border: 1px solid #FB717280;
+    background: var(--color-card-challenge-bg);
+    border: 1px solid var(--color-card-challenge-border);
     backdrop-filter: blur(20px);
     width: 100%;
     max-width: 350px;
@@ -310,8 +310,8 @@ body{
     min-height: 210px;
 }
 .home_sec1_card_body span{
-    background: #FB71721A;
-    border: 1px solid #FB717233;
+    background: var(--color-card-challenge-bg);
+    border: 1px solid var(--color-card-challenge-border-soft);
     height: 55px;
     width: 55px;
     display: flex;
@@ -326,14 +326,14 @@ body{
     margin-top: 15px;
     font-weight: 500;
     font-size: 20px;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     margin-bottom: 0;
 }
 .home_sec1_card_body p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -341,8 +341,8 @@ body{
     padding: 60px 0px;
 }
 .home_sec2_card_body_div{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
-    border: 1px solid rgba(0, 184, 136, 0.5);
+    background: var(--gradient-accent-subtle);
+    border: 1px solid var(--color-border-accent);
     width: 100%;
     max-width: 420px;
     margin: auto;
@@ -351,7 +351,7 @@ body{
 }
 .home_sec2_card_body_div img{
     border-radius: 8px 8px 0px 0px;
-    border-bottom: 1px solid rgba(0, 184, 136, 0.5);
+    border-bottom: 1px solid var(--color-border-accent);
     width: 100%;
     object-fit: cover;
     height: 250px;
@@ -363,14 +363,14 @@ body{
 .home_sec2_card_txt_div h5{
     font-weight: 500;
     font-size: 18px;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     margin-bottom: 0;
 }
 .home_sec2_card_txt_div p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
     margin-top: 12px;
 }
@@ -383,15 +383,15 @@ body{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     margin-bottom: 0;
     margin-top: 5px;
 }
 .home_sec2_card_txt_div ul li::marker {
-    color: #00B888;
+    color: var(--color-accent);
 }
 .approach_card_main{
-    border: 1px solid #26D2A280;
+    border: 1px solid var(--color-border-accent-strong);
     border-radius: 20px;
     padding: 20px 16px;
     margin-top: 50px;
@@ -402,7 +402,7 @@ body{
     line-height: 30px;
     letter-spacing: 0px;
     text-transform: capitalize;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
 }
 .approach_text_main_div p{
     font-family: "PT Sans", sans-serif;
@@ -410,7 +410,7 @@ body{
     font-size: 16px;
     line-height: 22px;
     letter-spacing: 0px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
     margin-top: 10px;
 }
@@ -422,17 +422,17 @@ body{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
     margin-top: 17px;
-    background-color: #F7F5F20D;
+    background-color: var(--color-list-bg);
     list-style-type: none;
     padding: 8px 8px 8px 30px;
     border-radius: 10px;
 }
 .approach_text_main_div ul li::before{
     content: "";
-    background: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
+    background: var(--gradient-accent);
     height: 8px;
     width: 8px;
     position: absolute;
@@ -451,8 +451,8 @@ body{
     padding: 60px 0px;
 }
 .home_sec4_card_body_div{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
-    border: 1px solid rgba(0, 184, 136, 0.5);
+    background: var(--gradient-accent-subtle);
+    border: 1px solid var(--color-border-accent);
     width: 100%;
     max-width: 420px;
     margin: auto;
@@ -464,7 +464,7 @@ body{
 }
 .home_sec4_card_img img{
     border-radius: 20px 20px 0px 0px;
-    border-bottom: 1px solid rgba(0, 184, 136, 0.5);
+    border-bottom: 1px solid var(--color-border-accent);
     width: 100%;
     object-fit: cover;
     height: 340px;
@@ -476,7 +476,7 @@ body{
 .home_sec4_card_txt h3{
     font-weight: 500;
     font-size: 20px;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     margin-bottom: 0;
     margin-top: 8px;
 }
@@ -484,7 +484,7 @@ body{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
     margin-top: 12px;
 }
@@ -502,9 +502,9 @@ body{
     border-radius: 50%;
 }
 .home_sec4__btn button{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.15) 0%, rgba(0, 184, 164, 0.15) 100%);
-    border: 1px solid rgba(0, 184, 136, 0.1);
-    color: #F7F5F2;
+    background: var(--gradient-accent-soft-btn);
+    border: 1px solid var(--color-border-accent);
+    color: var(--color-text-primary);
     font-weight: 400;
     font-size: 12px;
     vertical-align: middle;
@@ -515,8 +515,8 @@ body{
     padding: 60px 0px;
 }
 .home_sec5_card_body_div{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
-    border: 1px solid #26D2A280;
+    background: var(--gradient-accent-subtle);
+    border: 1px solid var(--color-border-accent-strong);
     border-radius: 20px;
     margin-top: 20px;
     padding: 15px 12px;
@@ -524,8 +524,8 @@ body{
     gap: 16px;
 }
 .home_sec5_card_body_div span{
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.1) 0%, rgba(0, 184, 164, 0.1) 100%);
-    border: 1px solid #00B888;
+    background: var(--gradient-accent-icon-bg);
+    border: 1px solid var(--color-accent);
     height: 55px;
     width: 55px;
     min-width: 55px;
@@ -538,7 +538,7 @@ body{
     height: 25px;
 }
 .home_sec5_card_txt h2{
-    color: #F7F5F2;
+    color: var(--color-text-primary);
     font-weight: 500;
     font-size: 26px;
     margin-bottom: 0;
@@ -547,25 +547,25 @@ body{
 .home_sec5_card_txt h5{
     font-weight: 500;
     font-size: 18px;
-    color: #26D2A2;
+    color: var(--color-accent-muted);
     margin-bottom: 0;
     margin-top: 8px;
 }
 .home_sec5_card_txt p{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 0;
     margin-top: 8px;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
 }
 .home_sec5_last_card_div{
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
-    border: 1px solid #26D2A280;
+    background: var(--gradient-accent-subtle);
+    border: 1px solid var(--color-border-accent-strong);
     border-radius: 20px;
     margin-top: 30px;
     padding: 20px 12px;
@@ -583,7 +583,7 @@ body{
     font-weight: 500;
     font-size: 26px;
     text-align: center;
-    color: #26D2A2;
+    color: var(--color-accent-muted);
 }
 .home_sec5_last_card_inner p{
     font-family: "PT Sans", sans-serif;
@@ -591,7 +591,7 @@ body{
     font-size: 17px;
     text-align: center;
     margin-bottom: 0;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
 }
 .home_section_six{
     padding: 60px 0px;
@@ -604,10 +604,10 @@ body{
     font-weight: 500;
     font-size: 32px;
     text-align: center;
-    color: #F7F5F2;
+    color: var(--color-text-primary);
 }
 .home_section_seven h3 span{
-    background: linear-gradient(90.53deg, #00B888 17.44%, #00B8A4 85.11%);
+    background: var(--gradient-accent-text);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -631,8 +631,8 @@ body{
     margin-top: 40px;
 }
 .home_sec8_card_main{
-    background: #26D2A20D;
-    border: 1px solid #26D2A280;
+    background: var(--color-cta-card-bg);
+    border: 1px solid var(--color-border-accent-strong);
     padding: 50px 20px;
     text-align: center;
     border-radius: 16px;
@@ -640,7 +640,7 @@ body{
 .home_sec8_bottom_text{
     width: 100%;
     max-width: 992px;
-    border-top: 1px solid #00B888;
+    border-top: 1px solid var(--color-accent);
     margin: auto;
     margin-top: 60px;
 }
@@ -649,7 +649,7 @@ body{
     font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
     margin-bottom: 0;
     margin-top: 20px;
 }
@@ -666,24 +666,24 @@ body{
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #c8c7c7;
+    color: var(--color-text-secondary);
 }
 .footer_section{
-    background: #26D2A2B2;
+    background: var(--color-footer-bg);
     padding: 50px 0px 0px 20px;
     margin-top: 100px;
 }
 .footer_text1_main h3{
     font-weight: 600;
     font-size: 32px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-bottom: 0;
 }
 .footer_text1_main h5{
     font-family: "PT Sans", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-bottom: 0;
     margin-top: 15px;
 }
@@ -691,12 +691,12 @@ body{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-bottom: 0;
     margin-top: 8px;
 }
 .footer_border{
-    border-top: 1px solid #2A2825;
+    border-top: 1px solid var(--color-footer-border);
     width: 100%;
     max-width: 992px;
     margin: 50px auto;
@@ -715,7 +715,7 @@ body{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-top: 20px;
 }
 .footer_links_div{
@@ -727,20 +727,20 @@ body{
 .footer_links_div h5{
     font-weight: 500;
     font-size: 22px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-bottom: 20px;
 }
 .footer_links_div a{
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     text-decoration: none;
     display: inline-block;
     max-width: max-content;
 }
 .footer_last_txt{
-    border-top: 1px solid #2A2825;
+    border-top: 1px solid var(--color-footer-border);
     width: 100%;
     max-width: 992px;
     margin: auto;
@@ -756,11 +756,11 @@ body{
 .footer_last_txt p{
     font-weight: 400;
     font-size: 16px;
-    color: #2A2825;
+    color: var(--color-footer-text);
     margin-bottom: 0;
 }
 .footer_last_txt p a{
-    color: #2A2825;
+    color: var(--color-footer-text);
 }
 
 
@@ -796,7 +796,7 @@ body{
     .my_title_div h1 {
         font-weight: 600;
         font-size: 42px;
-        color: #F7F5F2;
+        color: var(--color-text-primary);
     }
     .my_title_div p {
         font-family: "PT Sans", sans-serif;
@@ -809,7 +809,7 @@ body{
     .my_title_div h1 {
         font-weight: 600;
         font-size: 22px;
-        color: #F7F5F2;
+        color: var(--color-text-primary);
     }
     .my_title_div p {
         font-weight: 400;
