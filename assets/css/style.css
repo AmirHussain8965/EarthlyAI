@@ -775,6 +775,15 @@ body{
     }
 }
 @media (max-width: 992px){
+    .navbar-collapse{
+        background-color: rgba(0, 143, 111, 1);
+        padding: 0px 8px 15px 15px;
+        border-radius: 4px;
+    }
+    .header_section.scrolled .navbar-collapse{
+        background-color: transparent;
+        padding: 0 0 12px 0px;
+    }
     .nav_right_main{
         margin-top: 20px;
         margin-left: 0;

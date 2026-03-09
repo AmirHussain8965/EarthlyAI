@@ -1,6 +1,6 @@
 /**
  * Theme toggle: Light / Dark mode with localStorage and system preference.
- * Dark theme is the default fallback. Applies theme to <html data-theme="...">.
+ * Light theme is the default fallback. Applies theme to <html data-theme="...">.
  */
 
 (function () {
@@ -51,7 +51,7 @@
         if (stored === THEME_LIGHT || stored === THEME_DARK) {
             return stored;
         }
-        return getSystemPreference() || THEME_DARK;
+        return getSystemPreference() || THEME_LIGHT;
     }
 
     function init() {
