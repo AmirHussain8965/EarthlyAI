@@ -1,65 +1,10 @@
 /**
  * Theme system – design tokens for Light/Dark mode.
- * Dark theme is the default; light theme is applied via [data-theme="light"].
+ * Light theme is the default (via :root and [data-theme="light"]); dark is opt‑in via [data-theme="dark"].
  * All values are derived from the existing project palette.
  */
 
 :root,
-[data-theme="dark"] {
-    /* Backgrounds */
-    --color-bg: #0A0F1A;
-    --color-bg-scrolled: #0A0F1A;
-    --color-surface: rgba(247, 245, 242, 0.2);
-    --color-surface-solid: #F7F5F2;
-
-    /* Text */
-    --color-text-primary: #F7F5F2;
-    --color-text-secondary: #c8c7c7;
-
-    /* Accent / brand (teal) */
-    --color-accent: #00B888;
-    --color-accent-end: #00B8A4;
-    --color-accent-muted: #26D2A2;
-    --color-accent-badge: #63DBB1;
-    --color-accent-border-bright: #00FF88;
-
-    /* Gradients */
-    --gradient-accent: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
-    --gradient-accent-text: linear-gradient(90.53deg, #00B888 17.44%, #00B8A4 85.11%);
-    --gradient-accent-subtle: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
-    --gradient-accent-soft: linear-gradient(180deg, rgba(0, 184, 136, 0.2) 0%, rgba(0, 184, 164, 0.2) 100%);
-    --gradient-accent-soft-btn: linear-gradient(180deg, rgba(0, 184, 136, 0.15) 0%, rgba(0, 184, 164, 0.15) 100%);
-    --gradient-accent-icon-bg: linear-gradient(180deg, rgba(0, 184, 136, 0.1) 0%, rgba(0, 184, 164, 0.1) 100%);
-
-    /* Borders */
-    --color-border: rgba(247, 245, 242, 0.3);
-    --color-border-accent: rgba(0, 184, 136, 0.5);
-    --color-border-accent-strong: rgba(38, 210, 162, 0.5);
-
-    /* Card – challenge (red/coral) */
-    --color-card-challenge-bg: #FB71721A;
-    --color-card-challenge-border: #FB717280;
-    --color-card-challenge-border-soft: #FB717233;
-
-    /* List / UI surfaces */
-    --color-list-bg: rgba(247, 245, 242, 0.05);
-    --color-cta-card-bg: rgba(38, 210, 162, 0.05);
-    --color-hero-badge-bg: rgba(99, 219, 177, 0.5);
-    --color-hero-counter-bg: linear-gradient(180deg, rgba(247, 245, 242, 0.3) 0%, rgba(10, 15, 26, 0.3) 0.01%);
-
-    /* Footer (teal strip) */
-    --color-footer-bg: rgba(38, 210, 162, 0.7);
-    --color-footer-text: #2A2825;
-    --color-footer-border: #2A2825;
-
-    /* Form / select */
-    --color-input-bg: #FFFFFF;
-    --color-button-text: #FFFFFF;
-
-    /* Transitions */
-    --theme-transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
-}
-
 [data-theme="light"] {
     /* Backgrounds */
     --color-bg: #F0EDE8;
@@ -106,6 +51,61 @@
     --color-footer-bg: rgba(0, 143, 111, 0.85);
     --color-footer-text: #F7F5F2;
     --color-footer-border: rgba(247, 245, 242, 0.4);
+
+    /* Form / select */
+    --color-input-bg: #FFFFFF;
+    --color-button-text: #FFFFFF;
+
+    /* Transitions */
+    --theme-transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+[data-theme="dark"] {
+    /* Backgrounds */
+    --color-bg: #0A0F1A;
+    --color-bg-scrolled: #0A0F1A;
+    --color-surface: rgba(247, 245, 242, 0.2);
+    --color-surface-solid: #F7F5F2;
+
+    /* Text */
+    --color-text-primary: #F7F5F2;
+    --color-text-secondary: #c8c7c7;
+
+    /* Accent / brand (teal) */
+    --color-accent: #00B888;
+    --color-accent-end: #00B8A4;
+    --color-accent-muted: #26D2A2;
+    --color-accent-badge: #63DBB1;
+    --color-accent-border-bright: #00FF88;
+
+    /* Gradients */
+    --gradient-accent: linear-gradient(180deg, #00B888 0%, #00B8A4 100%);
+    --gradient-accent-text: linear-gradient(90.53deg, #00B888 17.44%, #00B8A4 85.11%);
+    --gradient-accent-subtle: linear-gradient(180deg, rgba(0, 184, 136, 0.05) 0%, rgba(0, 184, 164, 0.05) 100%);
+    --gradient-accent-soft: linear-gradient(180deg, rgba(0, 184, 136, 0.2) 0%, rgba(0, 184, 164, 0.2) 100%);
+    --gradient-accent-soft-btn: linear-gradient(180deg, rgba(0, 184, 136, 0.15) 0%, rgba(0, 184, 164, 0.15) 100%);
+    --gradient-accent-icon-bg: linear-gradient(180deg, rgba(0, 184, 136, 0.1) 0%, rgba(0, 184, 164, 0.1) 100%);
+
+    /* Borders */
+    --color-border: rgba(247, 245, 242, 0.3);
+    --color-border-accent: rgba(0, 184, 136, 0.5);
+    --color-border-accent-strong: rgba(38, 210, 162, 0.5);
+
+    /* Card – challenge (red/coral) */
+    --color-card-challenge-bg: #FB71721A;
+    --color-card-challenge-border: #FB717280;
+    --color-card-challenge-border-soft: #FB717233;
+
+    /* List / UI surfaces */
+    --color-list-bg: rgba(247, 245, 242, 0.05);
+    --color-cta-card-bg: rgba(38, 210, 162, 0.05);
+    --color-hero-badge-bg: rgba(99, 219, 177, 0.5);
+    --color-hero-counter-bg: linear-gradient(180deg, rgba(247, 245, 242, 0.3) 0%, rgba(10, 15, 26, 0.3) 0.01%);
+
+    /* Footer (teal strip) */
+    --color-footer-bg: rgba(38, 210, 162, 0.7);
+    --color-footer-text: #2A2825;
+    --color-footer-border: #2A2825;
 
     /* Form / select */
     --color-input-bg: #FFFFFF;
@@ -213,6 +213,15 @@ body,
 
 [data-theme="light"] .theme-toggle-btn .theme-icon-dark {
     display: none;
+}
+
+/* Theme-specific navbar toggler icon */
+[data-theme="light"] .navbar-toggler-icon {
+    filter: brightness(0);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: unset;
 }
 
 /* Light mode: hero counter captions in white for emphasis */

@@ -10,11 +10,7 @@
             var k = "earthlyai-theme", d = "dark", l = "light", s = null;
             try { s = localStorage.getItem(k); } catch (e) {}
             if (s !== l && s !== d) {
-                try {
-                    s = window.matchMedia("(prefers-color-scheme: light)").matches ? l : d;
-                } catch (e) {
-                    s = l; // default to light if no system preference
-                }
+                s = l; // default to light when no saved preference
             }
             document.documentElement.setAttribute("data-theme", s === l ? l : d);
         })();

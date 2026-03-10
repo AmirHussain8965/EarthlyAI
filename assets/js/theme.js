@@ -47,11 +47,20 @@
     }
 
     function getEffectiveTheme() {
+        // 1. Respect explicit user choice from localStorage
         var stored = getStoredTheme();
         if (stored === THEME_LIGHT || stored === THEME_DARK) {
             return stored;
         }
-        return getSystemPreference() || THEME_LIGHT;
+
+        // 2. If an initial theme was set on <html data-theme="..."> (from inline script), keep it
+        var currentAttr = document.documentElement.getAttribute("data-theme");
+        if (currentAttr === THEME_LIGHT || currentAttr === THEME_DARK) {
+            return currentAttr;
+        }
+
+        // 3. Fallback: hard default to light, ignore system preference
+        return THEME_LIGHT;
     }
 
     function init() {
